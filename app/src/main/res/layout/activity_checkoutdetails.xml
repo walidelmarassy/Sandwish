@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutdetailsActivity">
+    <ImageView
+        android:id="@+id/backincheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bacincheckout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15.8dp"
+        />
+    <TextView
+        android:id="@+id/checkouttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/backincheckout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Checkout"
+        android:textSize="18sp"
+        android:textColor="#3F3E3F"
+        android:textStyle="bold"
+        android:layout_marginLeft="19.72dp"
+        />
+    <ImageView
+        android:id="@+id/haif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/backincheckout"
+        app:layout_constraintStart_toEndOf="@+id/backincheckout"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/half"
+        />
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/haif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textColor="#3F3E3F"
+        android:layout_marginTop="15dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/checkoutcard"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:cardCornerRadius="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="26 Saint Peter St, Nasr City"
+                android:textSize="14sp"
+                android:textColor="#3F3E3F"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="18.49dp"
+                android:layout_marginTop="6.76dp"
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/pickaddress"
+        android:layout_width="111dp"
+        android:layout_height="45dp"
+        android:background="@drawable/loginbuttoncurve"
+        app:layout_constraintTop_toBottomOf="@+id/checkoutcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Pick Address"
+        android:textSize="14sp"
+        android:textColor="#3F3E3F"
+        android:textAllCaps="false"
+
+        />
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pickaddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="OR"
+        android:textStyle="bold"
+        android:textColor="#3F3E3F"
+        android:layout_marginTop="16dp"
+
+        />
+    <TextView
+        android:id="@+id/pickfromprevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        android:text="Pick From Previous Addresses"
+        android:textColor="#3F3E3F"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/pickfromprevious"
+        app:cardBackgroundColor="#E7E8D7"
+        android:layout_marginTop="9dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/locationimage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location"
+                android:layout_marginLeft="20.19dp"
+                android:layout_marginTop="13.76dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/locationimage"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="26 Saint Peter St, Nasr City"
+                android:layout_marginLeft="12.49dp"
+                android:layout_marginTop="16sp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="111dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/loginbuttoncurve"
+        android:layout_marginBottom="23dp"
+        android:text="Continue"
+        android:textStyle="bold"
+        android:textColor="#3F3E3F"
+        android:textAllCaps="false"
+
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindrestrauntActivity">
+    <ImageView
+        android:id="@+id/blacknavicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/blackburgericon"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="22dp"
+        />
+    <TextView
+        android:id="@+id/ordertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/blacknavicon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Orders"
+        android:textColor="#3F3E3F"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/orderbackground"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        app:layout_constraintTop_toBottomOf="@+id/ordertext"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="22dp"
+        android:src="@drawable/orderbackground"
+        />
+    <TextView
+        android:id="@+id/orderyouhave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/orderbackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"
+        android:text="You have no orders at the moment"
+        android:textSize="16sp"
+        android:textColor="#3F3E3F"
+        />
+    <TextView
+        android:id="@+id/andrestraunt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/orderyouhave"
+        app:layout_constraintTop_toBottomOf="@+id/orderyouhave"
+        android:layout_marginTop="6dp"
+        android:text="Find restaurants to start ordering"
+        android:textSize="16sp"
+        android:textColor="#3F3E3F"
+        />
+    <Button
+        android:layout_width="146dp"
+        android:layout_height="47dp"
+        app:layout_constraintTop_toBottomOf="@+id/andrestraunt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/loginbuttoncurve"
+        android:text="Find Restaurants"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+        android:textSize="16sp"
+        android:textAlignment="center"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

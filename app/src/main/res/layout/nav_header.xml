@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="#DFB223"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimage"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/avatar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahmed Ahmed"
+            android:textColor="#3F3E3F"
+            app:layout_constraintStart_toEndOf="@id/userimage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="17dp"
+            android:textSize="16sp"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

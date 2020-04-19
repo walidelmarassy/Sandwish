@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sandwish</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور </string>
+    <string name="forgetpassword"> هل نسيت كلمة المرور؟</string>
+    <string name="login"> تسجيل الدخول</string>
+    <string name="orlogin">او قم بتسجيل الدخول عن طريق</string>
+    <string name="orcreate">قم بانشاء حساب جديد</string>
+    <string name="firstname">الاسم الاول</string>
+    <string name="lastname">الاسم الاخير</string>
+    <string name="confrimpassword">تاكيد كلمة المرور</string>
+    <string name="phonenumber">رقم الهاتف</string>
+    <string name="signup">تسجيل الدخول</string>
+    //Messages
+    <string name="connection_error">خطأ في الاتصال بالانترنت</string>
+    <string name="error_occurred">خطأ في الاتصال بالخادم</string>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

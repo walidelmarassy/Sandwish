@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TypeoffoodActivity"
+    android:background="#E4D8C2"
+    >
+
+    <ImageView
+        android:id="@+id/searchbackground"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FCC207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="12.28dp"
+        android:layout_height="20.65dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="253dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="9dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="3.5dp"
+            android:text="Search Restaurants"
+            android:textColor="#BEBEBE"
+
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="4.6dp"
+            android:layout_marginRight="19.44dp"
+            android:src="@drawable/maginfiglass"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbackground"
+        android:text="Cuisines"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#3F3E3F"
+        android:layout_marginTop="20dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/cuisine"
+        app:layout_constraintTop_toTopOf="@+id/cuisine"
+        android:src="@drawable/cusienseimage"
+        android:layout_marginRight="15.56dp"
+        />
+    <Button
+        android:id="@+id/afrcia"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cuisine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/typeoffoodbutton"
+        android:text="African"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+        android:textSize="16sp"
+        />
+    <Button
+        android:id="@+id/asia"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cuisine"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/typeoffoodbutton"
+        android:text="Asian"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+        android:textSize="16sp"
+        />
+    <Button
+        android:id="@+id/breakfast"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintTop_toBottomOf="@id/cuisine"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/typeoffoodbutton"
+        android:text="Breakfast"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        />
+    <Button
+        android:id="@+id/burgers"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/afrcia"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Burgers"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/typeoffoodbutton"
+        android:textColor="#3F3E3F"/>
+
+    <Button
+        android:id="@+id/chiense"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="@id/asia"
+        app:layout_constraintTop_toBottomOf="@+id/afrcia"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/typeoffoodbutton"
+        android:text="Chinese"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+
+        />
+    <Button
+        android:id="@+id/coffe"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast"
+        app:layout_constraintStart_toStartOf="@id/breakfast"
+        android:background="@drawable/typeoffoodbutton"
+        android:layout_marginTop="25dp"
+        android:text="Coffee"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+
+
+        />
+    <Button
+        android:id="@+id/fastfood"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="@+id/burgers"
+        app:layout_constraintTop_toBottomOf="@+id/burgers"
+        android:background="@drawable/typeoffoodbutton"
+        android:layout_marginTop="25dp"
+        android:text="Fast Food"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+        />
+    <Button
+        android:id="@+id/sandwish"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="@id/asia"
+        app:layout_constraintTop_toBottomOf="@+id/chiense"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/typeoffoodbutton"
+        android:text="Sandwich"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+
+        />
+    <Button
+        android:id="@+id/Shawerma"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/coffe"
+        app:layout_constraintStart_toStartOf="@id/breakfast"
+        android:background="@drawable/typeoffoodbutton"
+        android:layout_marginTop="25dp"
+        android:text="Shawerma"
+        android:textAllCaps="false"
+        android:textColor="#3F3E3F"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/loginbuttoncurve"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:layout_marginBottom="31dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#3F3E3F"
+
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ThirdWelcomescreenActivity"
+        android:background="#FAFFB4"
+        >
+
+        <ImageView
+            android:id="@+id/thirdwelcomeimage"
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:src="@drawable/thirdwelcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ordeeryourfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/thirdwelcomeimage"
+            android:text="Order any food you want wherever"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:layout_marginLeft="49dp"
+            android:layout_marginRight="39dp"
+            android:textColor="#3F3E3F" />
+
+        <TextView
+            android:id="@+id/youareit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ordeeryourfood"
+            android:layout_marginTop="11dp"
+            android:text="you are at."
+            android:textColor="#3F3E3F"
+            android:textSize="17sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/skiptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/youareit"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Skip"
+            android:textColor="#3F3E3F"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="85dp" />
+
+        <ImageView
+            android:id="@+id/firstdotted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/skiptext"
+            app:layout_constraintTop_toTopOf="@+id/skiptext"
+            android:src="@drawable/blackdotted"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="2dp" />
+
+        <ImageView
+            android:id="@+id/seconddotted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blackdotted"
+            app:layout_constraintStart_toEndOf="@+id/firstdotted"
+            app:layout_constraintTop_toTopOf="@+id/firstdotted"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orangedot"
+            app:layout_constraintStart_toEndOf="@+id/seconddotted"
+            app:layout_constraintTop_toTopOf="@+id/seconddotted"
+            android:layout_marginLeft="20dp"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
